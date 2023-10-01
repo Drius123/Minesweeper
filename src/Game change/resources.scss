@@ -1,0 +1,30 @@
+.game-settings {
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+	align-items: center;
+	justify-content: center;
+}
+
+#input-mines {
+	width: 50px;
+	font-size: 13px;
+	padding: 6px 0 4px 10px;
+	border: 1px solid #cecece;
+	background: #F6F6f6;
+	border-radius: 8px;
+}
+
+#input-mines:invalid {
+		border: 2px dashed red;
+}
+
+label {
+  font-size: 18px;
+  pointer-events: none;
+  left: 10px;
+  top: 15px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}

@@ -1,0 +1,37 @@
+.game-win-h1 {
+	font-family: 'Georgia';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.clicks-win, .time-win {
+	font-family: 'Georgia';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.clicks-win::before {
+	content: 'Number of clicks: ';
+	font-family: 'Georgia';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.time-win::before {
+	content: 'Time: ';
+	font-family: 'Georgia';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.time-win::after {
+	content: ' s';
+	font-family: 'Georgia';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+}

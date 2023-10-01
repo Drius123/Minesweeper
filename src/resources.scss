@@ -1,0 +1,315 @@
+button {
+	width: 50px;
+	height: 50px;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	background: rgb(0,172,238);
+	background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+	 box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+	 7px 7px 20px 0px rgba(0,0,0,.1),
+	 4px 4px 5px 0px rgba(0,0,0,.1);
+	outline: none;
+	border-radius: 5px;
+}
+
+button:hover{
+	background: rgb(96,9,240);
+	background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+	border: none;
+}
+
+.game-field.dark{
+	button {
+		background: black;
+		color: #fff;
+	}
+
+	button.active {
+		background: #2f4f4f;
+	}
+
+	button:hover{
+		background: #708090;
+	}
+
+	button.active.green:hover{
+		background: green;
+	}
+	
+	button.active.red:hover{
+		background: red;
+	}
+	
+	button.active.orange:hover{
+		background: orange;
+	}
+	
+	button.active.brown:hover{
+		background: brown;
+	}
+	
+	button.red {
+		background: red;
+	}
+	
+	button.yellow {
+		background: yellow;
+	}
+	
+	button.blue {
+		background: blue;
+	}
+	
+	button.pink {
+		background: pink;
+	}
+	
+	button.aqua {
+		background: aqua;
+	}
+	
+	button.green {
+		background: green;
+	}
+	
+	button.orange {
+		background: orange;
+	}
+	
+	button.brown {
+		background: brown;
+	}
+}
+.game-field {
+	button {
+		width: 50px;
+		height: 50px;
+		background: transparent;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		position: relative;
+		display: inline-block;
+		background: rgb(0,172,238);
+		background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+		 box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+		 7px 7px 20px 0px rgba(0,0,0,.1),
+		 4px 4px 5px 0px rgba(0,0,0,.1);
+		outline: none;
+		border-radius: 5px;
+	}
+	
+	
+	button.active {
+		background: gray;
+	}
+	
+	button:hover{
+		background: rgb(96,9,240);
+		background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+		border: none;
+	}
+	
+	button.active:hover {
+		background: gray
+	}
+	
+	button.active.green:hover{
+		background: green;
+	}
+	
+	button.active.red:hover{
+		background: red;
+	}
+	
+	button.active.orange:hover{
+		background: orange;
+	}
+	
+	button.active.brown:hover{
+		background: brown;
+	}
+	
+	button.red {
+		background: red;
+	}
+	
+	button.yellow {
+		background: yellow;
+	}
+	
+	button.blue {
+		background: blue;
+	}
+	
+	button.pink {
+		background: pink;
+	}
+	
+	button.aqua {
+		background: aqua;
+	}
+	
+	button.green {
+		background: green;
+	}
+	
+	button.orange {
+		background: orange;
+	}
+	
+	button.brown {
+		background: brown;
+	}
+	
+	button.flag::after {
+		content: '\2691';
+	}
+	
+	button.bomb::after{
+		content: '\1F4A3';
+	}
+}
+
+.game-field {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(10, 1fr);
+	gap: 2px;
+}
+
+.gameover,
+.section-game-win,
+.game-scores {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
+.gameover.active,
+.section-game-win.active,
+.game-scores.active {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	row-gap: 10px;
+	background: rgb(255, 255, 255, 0.7);
+	z-index: 100;
+}
+
+.btn-gameover,.btn-game-win, .btn-change-color, .btn-back-game {
+	width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+	background: rgb(96,9,240);
+  background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+  border: none;
+}
+
+.btn-game-win{
+	height: 50px;
+}
+
+.btn-back-game{
+	height: 50px;
+}
+
+.btn-change-color {
+	width: 300px;
+	height: 40px;
+}
+
+.btn-gameover:hover, .btn-game-win:hover {
+	box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+	-4px -4px 6px 0 rgba(116, 125, 136, .5), 
+	inset -4px -4px 6px 0 rgba(255,255,255,.2),
+	inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+.text-timer {
+	font-family: 'Georgia';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.text-timer::before {
+	content: 'Your time is: ';
+	font-family: 'Georgia';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.text-timer::after {
+	content: ' second';
+	font-family: 'Georgia';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.text-clicks, .game-text-scores {
+	font-family: 'Georgia';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.text-clicks::before {
+	content: 'Number of clicks: ';
+	font-family: 'Georgia';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+}
+
+.new-game{
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
+.new-game.active {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	row-gap: 10px;
+	background: rgb(255, 255, 255, 0.7);
+	z-index: 100;
+}
+
+@media (max-width: 765px){
+	.game-field{
+		button {
+			width: 40px;
+			height: 40px;
+		}
+	}
+	.nav-list{
+		column-gap: 10px;
+	}
+}

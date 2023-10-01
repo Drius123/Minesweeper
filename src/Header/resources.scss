@@ -1,0 +1,37 @@
+.header{
+	background: #FFFF99;
+}
+
+.header{
+	.logo{
+		font-family: 'Georgia';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 32px;
+		color: #330066
+	}
+	.logo:hover{
+		opacity: 0.7;
+		transition: 0.3s ease 0s;
+	}
+	.nav-item{
+		font-family: 'Arial';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 15px;
+		color: #000033;
+		transition: 0.3s ease 0s;
+	}
+	.nav-item:hover{
+		opacity: 0.7;
+		transition: 0.3s ease 0s;
+	}
+}
+
+@media (max-width: 765px){
+	.header{
+		.logo {
+			font-size: 15px;
+		}
+	}
+}
